@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/time_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/current_time"
+        android:text="Time Step"
+        ></Button>
+
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/time_step"
+        app:layout_constraintRight_toLeftOf="@id/demolish"
+        android:textSize="24dp"
+        android:text="0"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/demolish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/current_time"
+        app:layout_constraintRight_toLeftOf="@id/save_game"
+        android:text="Demolish"
+        ></Button>
+
+    <Button
+        android:id="@+id/save_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/demolish"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Save Game"
+        ></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

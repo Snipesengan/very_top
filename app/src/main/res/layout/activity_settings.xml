@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.Activity_Settings">
+
+    <!--map width -->
+    <EditText
+        android:id="@+id/map_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="City Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="150dp"
+        android:ems="10" />
+
+    <!--map width -->
+    <EditText
+        android:id="@+id/map_width_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:hint="Map Width"
+        app:layout_constraintTop_toBottomOf="@id/map_name"
+        app:layout_constraintBottom_toTopOf="@id/map_height_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:ems="10" />
+
+    <!--map height -->
+    <EditText
+        android:id="@+id/map_height_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:hint="Map Height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/map_width_input"
+        app:layout_constraintBottom_toTopOf="@id/starting_balance_input"/>
+
+    <!--starting balance -->
+    <EditText
+        android:id="@+id/starting_balance_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:ems="10"
+        android:hint="Starting Balance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/map_height_input"
+        app:layout_constraintBottom_toTopOf="@id/save_settings"/>
+
+
+    <!--save settings -->
+    <Button
+        android:id="@+id/save_settings"
+        android:text="Save Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/starting_balance_input"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
